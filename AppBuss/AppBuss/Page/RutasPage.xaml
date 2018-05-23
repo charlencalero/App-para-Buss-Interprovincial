@@ -11,20 +11,20 @@
                    VerticalOptions="Center" FontSize="Large"></Label>
 
            
-            <Label Text="Origen"></Label>
-            <Picker x:Name="CombOrigen"></Picker>
-            <Label Text="Destino"></Label>
-            <Picker x:Name="CombDestino"></Picker>
-             <Label Text="Fecha Viaje"></Label>
+           
+            <Picker Title="Seleccione Origen" x:Name="CombOrigen"></Picker>
+            <Picker Title="Seleccione Destino" x:Name="CombDestino"></Picker>
+            
+            <Label Text="Fecha Viaje"></Label>
             <DatePicker x:Name="FechaViaje"></DatePicker>
            
             <Label Text=""></Label>
             <Button  Style="{StaticResource Boton}" Text="Buscar" ></Button>
             <Label Text=""></Label>
-            <Label Text="Servicios Disponibles Ida"></Label>
-            <Picker x:Name="combservicioida"></Picker>
-            <Button Style="{StaticResource Boton}" Text="Ir a Primer Piso"  ></Button>
-            <Button Style="{StaticResource Boton}" Text="Ir a Segundo Piso" ></Button>
+           
+            <Picker x:Name="combservicioida" Title="Selecione Servicio"></Picker>
+            <Button Style="{StaticResource Boton}" Text="Ir a Primer Piso" x:Name="ButtPrimer" Clicked="ButtPrimer_Clicked" ></Button>
+            <Button Style="{StaticResource Boton}" Text="Ir a Segundo Piso" x:Name="ButtSegundo" Clicked="ButtSegundo_Clicked" ></Button>
 
    
            

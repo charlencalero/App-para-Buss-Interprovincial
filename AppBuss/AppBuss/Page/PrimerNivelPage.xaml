@@ -19,34 +19,40 @@
                 </StackLayout>
 
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                    <Image x:Name="a1"  Source="AsieLibre.png" />
-                    <Image x:Name="a2"  Source="AsieOcup.png"  />
-                    <Image  Source="piso.png"  />
-                    <Image x:Name="a3"  Source="AsiePend.png"  />
-                    <Image x:Name="a4"  Source="AsieRese.png"  />
+
+                    <Button x:Name="a1"  Style="{StaticResource BotonPasajero}"  Image="AsieLibre.png" Clicked="a1_Clicked"></Button>
+                    <Button x:Name="a2"  Style="{StaticResource BotonPasajero}" Image="AsieLibre.png" Clicked="a2_Clicked"></Button>
+                  
+                    <Image  Source="piso.png" WidthRequest="50"  />
+                    
+                    <Button x:Name="a3"  Style="{StaticResource BotonPasajero}" Image="AsieLibre.png" Clicked="a3_Clicked"></Button>
+                    <Button x:Name="a4"  Style="{StaticResource BotonPasajero}" Image="AsieLibre.png" Clicked="a4_Clicked"></Button>
+                    
                 </StackLayout>
 
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                    <Image x:Name="a5"   Source="AsieLibre.png" />
-                    <Image x:Name="a6"  Source="AsieOcup.png"  />
-                    <Image  Source="piso.png"  />
-                    <Image x:Name="a7"  Source="AsiePend.png"  />
-                    <Image x:Name="a8"  Source="AsieRese.png"  />
+                    <Button x:Name="a5"  Style="{StaticResource BotonPasajero}" Image="AsieLibre.png" Clicked="a5_Clicked"></Button>
+                    <Button x:Name="a6"  Style="{StaticResource BotonPasajero}" Image="AsieLibre.png" Clicked="a6_Clicked"></Button>
+                    <Image  Source="piso.png" WidthRequest="50"  />
+                    <Button x:Name="a7"  Style="{StaticResource BotonPasajero}" Image="AsieLibre.png" Clicked="a7_Clicked"></Button>
+                    <Button x:Name="a8"  Style="{StaticResource BotonPasajero}" Image="AsieLibre.png" Clicked="a8_Clicked"></Button>
                 </StackLayout>
 
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                    <Image x:Name="a9"   Source="asie1.jpg" />
-                    <Image x:Name="a10"  Source="asie1.jpg"  />
-                    <Image  Source="piso.png"  />
-                    <Image x:Name="a11"  Source="asie1.jpg"  />
-                    <Image x:Name="a12"  Source="asie1.jpg"  />
+                    <Button x:Name="a9"  Style="{StaticResource BotonPasajero}" Image="AsieLibre.png" Clicked="a9_Clicked"></Button>
+                    <Button x:Name="a10"  Style="{StaticResource BotonPasajero}" Image="AsieLibre.png" Clicked="a10_Clicked"></Button>
+                    <Image  Source="piso.png" WidthRequest="50"  />
+                    <Button x:Name="a11"  Style="{StaticResource BotonPasajero}" Image="AsieLibre.png" Clicked="a11_Clicked"></Button>
+                    <Button x:Name="a12"  Style="{StaticResource BotonPasajero}" Image="AsieLibre.png" Clicked="a12_Clicked"></Button>
+            
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                    <Image x:Name="a13"   Source="asie1.jpg" />
-                    <Image x:Name="a14"  Source="asie1.jpg"  />
-                    <Image  Source="piso.png"  />
-                    <Image x:Name="a15"  Source="asie1.jpg"  />
-                    <Image x:Name="a16"   Source="asie1.jpg"  />
+                    <Button x:Name="a13"  Style="{StaticResource BotonPasajero}" Image="AsieLibre.png" Clicked="a13_Clicked"></Button>
+                    <Button x:Name="a14"  Style="{StaticResource BotonPasajero}" Image="AsieLibre.png" Clicked="a14_Clicked"></Button>
+
+                    <Image  Source="piso.png" WidthRequest="50"  />
+                    <Button x:Name="a15"  Style="{StaticResource BotonPasajero}" Image="AsieLibre.png" Clicked="a15_Clicked"></Button>
+                    <Button x:Name="a16"  Style="{StaticResource BotonPasajero}" Image="AsieLibre.png" Clicked="a16_Clicked"></Button>
                 </StackLayout>
 
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center">

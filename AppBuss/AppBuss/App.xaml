@@ -9,6 +9,9 @@
             <Color x:Key="PageBackgroundColor">Yellow</Color>
             <Color x:Key="BotonColor">Blue</Color>
             <Color x:Key="BotonFondo">Silver</Color>
+
+            <Color x:Key="BotonFondoPasajero">White</Color>
+
             <Thickness x:Key="BotonMargin">10,0,20,10</Thickness>
 
 
@@ -23,7 +26,15 @@
 
             </Style>
 
-
+            <Style x:Key="BotonPasajero" TargetType="Button">
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="WidthRequest" Value="65" />
+                <Setter Property="HeightRequest" Value="65" />
+                <Setter Property="BackgroundColor" Value="{StaticResource BotonFondoPasajero}" />
+             
+         
+            </Style>
 
         </ResourceDictionary>
     </Application.Resources>

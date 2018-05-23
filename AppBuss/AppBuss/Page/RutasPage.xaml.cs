@@ -37,5 +37,15 @@ namespace AppBuss.Page
 
 
         }
-	}
+
+        private void ButtPrimer_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new PrimerNivelPage());
+        }
+
+        private void ButtSegundo_Clicked(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

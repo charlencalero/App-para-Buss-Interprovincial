@@ -15,7 +15,7 @@ namespace AppBuss
 			InitializeComponent();
 
 			//MainPage = new AppBuss.MainPage();
-            MainPage = new RutasPage();
+            MainPage = new NavigationPage(new RutasPage());
         }
 
 		protected override void OnStart ()
