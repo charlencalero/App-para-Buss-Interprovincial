@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AppBuss"
+             x:Class="AppBuss.MainPage">
+
+    <StackLayout>
+        <Label Text="E.T.P.O.S.A." FontSize="Medium" HorizontalOptions="CenterAndExpand" />
+        <StackLayout x:Name="panel" Orientation="Vertical" HorizontalOptions="Center">
+            <Entry x:Name="txtservicio" Placeholder="servicio" Text="LIMA-HUANUCO-9:30PM" HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="txtpasaje" Placeholder="pasaje" Text="50" HorizontalOptions="CenterAndExpand"  />
+            <Button x:Name="btnCallJS" Text="Pagar" Clicked="OnbtnCallJSClicked"/>
+            <ActivityIndicator x:Name="espere" IsVisible="False"></ActivityIndicator>
+        </StackLayout>
+        
+        <WebView IsVisible="False" Source="https://ksoftkf.azurewebsites.net/culqi.html" x:Name="webView" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+    </StackLayout>
+
+</ContentPage>
