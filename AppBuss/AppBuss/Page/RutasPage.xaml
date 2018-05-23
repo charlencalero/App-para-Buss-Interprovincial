@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBuss.Page.RutasPage">
+    <ContentPage.Content>
+
+        <StackLayout Orientation="Vertical" Padding="10,30,30,10">
+            <Label Text=" Seleccione Ruta "
+                         Font="Bold" 
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" FontSize="Large"></Label>
+
+           
+            <Label Text="Origen"></Label>
+            <Picker x:Name="CombOrigen"></Picker>
+            <Label Text="Destino"></Label>
+            <Picker x:Name="CombDestino"></Picker>
+             <Label Text="Fecha Viaje"></Label>
+            <DatePicker x:Name="FechaViaje"></DatePicker>
+           
+            <Label Text=""></Label>
+            <Button  Style="{StaticResource Boton}" Text="Buscar" ></Button>
+            <Label Text=""></Label>
+            <Label Text="Servicios Disponibles Ida"></Label>
+            <Picker x:Name="combservicioida"></Picker>
+            <Button Style="{StaticResource Boton}" Text="Ir a Primer Piso"  ></Button>
+            <Button Style="{StaticResource Boton}" Text="Ir a Segundo Piso" ></Button>
+
+   
+           
+          
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

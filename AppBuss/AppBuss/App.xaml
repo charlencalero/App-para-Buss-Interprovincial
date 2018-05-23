@@ -4,7 +4,27 @@
              x:Class="AppBuss.App">
 	<Application.Resources>
 
-		<!-- Application resource dictionary -->
+        <ResourceDictionary>
 
-	</Application.Resources>
+            <Color x:Key="PageBackgroundColor">Yellow</Color>
+            <Color x:Key="BotonColor">Blue</Color>
+            <Color x:Key="BotonFondo">Silver</Color>
+            <Thickness x:Key="BotonMargin">10,0,20,10</Thickness>
+
+
+            <Style x:Key="Boton" TargetType="Button">
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="WidthRequest" Value="180" />
+                <Setter Property="HeightRequest" Value="60" />
+                <Setter Property="BackgroundColor" Value="{StaticResource BotonFondo}" />
+                <Setter Property="TextColor" Value="{StaticResource BotonColor}" />
+                <Setter Property="Margin" Value="{StaticResource BotonMargin}" />
+
+            </Style>
+
+
+
+        </ResourceDictionary>
+    </Application.Resources>
 </Application>

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-using culqi.net;
+//using culqi.net;
 using Newtonsoft.Json.Linq;
 using System.Reflection;
 using System.IO;

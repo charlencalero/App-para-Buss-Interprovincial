@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBuss.Page.PrimerNivelPage">
+
+    <ContentPage.Content>
+        <ScrollView >
+
+
+            <StackLayout  Padding="10,30,10,10" Spacing="6">
+
+                <Label Text=" Primer Piso "
+                         Font="Bold" 
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" FontSize="Large"></Label>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Image  Source="front.png" HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Image x:Name="a1"  Source="AsieLibre.png" />
+                    <Image x:Name="a2"  Source="AsieOcup.png"  />
+                    <Image  Source="piso.png"  />
+                    <Image x:Name="a3"  Source="AsiePend.png"  />
+                    <Image x:Name="a4"  Source="AsieRese.png"  />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Image x:Name="a5"   Source="AsieLibre.png" />
+                    <Image x:Name="a6"  Source="AsieOcup.png"  />
+                    <Image  Source="piso.png"  />
+                    <Image x:Name="a7"  Source="AsiePend.png"  />
+                    <Image x:Name="a8"  Source="AsieRese.png"  />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Image x:Name="a9"   Source="asie1.jpg" />
+                    <Image x:Name="a10"  Source="asie1.jpg"  />
+                    <Image  Source="piso.png"  />
+                    <Image x:Name="a11"  Source="asie1.jpg"  />
+                    <Image x:Name="a12"  Source="asie1.jpg"  />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Image x:Name="a13"   Source="asie1.jpg" />
+                    <Image x:Name="a14"  Source="asie1.jpg"  />
+                    <Image  Source="piso.png"  />
+                    <Image x:Name="a15"  Source="asie1.jpg"  />
+                    <Image x:Name="a16"   Source="asie1.jpg"  />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Image Source="back.png"  HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+            </StackLayout>
+
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>

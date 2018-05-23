@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBuss.Page.ClientesPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="10,30,30,10">
+            <Label  Text="Registrar Usuario" VerticalOptions="Center" HorizontalOptions="Center" />
+            <Entry Placeholder="DNI" Text=""></Entry>
+            <Entry Placeholder="Nombres" Text=""></Entry>
+            <Entry Placeholder="Apellidos" Text=""></Entry>
+            <Entry Placeholder="Correo" Text=""></Entry>
+            <Entry Placeholder="Celular" Text=""></Entry>
+
+            <Entry Placeholder="Direccion" Text=""></Entry>
+
+            <Entry Placeholder="Ruc" Text=""></Entry>
+            <Entry Placeholder="RazonSocial" Text=""></Entry>
+            <Button Style="{StaticResource Boton}" Text="Ingresar" ></Button>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
