@@ -6,6 +6,10 @@ namespace AppBuss.Entity
 {
     public class Pasajero
     {
+        public Pasajero()
+        {
+        }
+
         public Pasajero(int id, Ruta ruta, string fecha, string tipocomp, string seriecomp, string numecomp, string valorpasaje, string asiento)
         {
             this.id = id;

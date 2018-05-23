@@ -20,6 +20,7 @@ namespace AppBuss.Entity
         public Ciudad destino { get; set; }
         public string hora { get; set; }
         public string descripcion { get; set; }
-
+        public string precioprimer { get; set; }
+        public string preciosegundo { get; set; }
     }
 }

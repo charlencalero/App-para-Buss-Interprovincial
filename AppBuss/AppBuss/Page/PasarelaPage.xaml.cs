@@ -8,60 +8,44 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using System.Reflection;
+using AppBuss.Entity;
 
 namespace AppBuss.Page
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class PasarelaPage : ContentPage
 	{
-		public PasarelaPage ()
+      
+
+        public PasarelaPage (Pasajero pasajero)
 		{
 			InitializeComponent ();
-		}
-
-        HtmlWebViewSource LoadHTMLFileFromResource()
-        {
-            try
-            {
-                var source = new HtmlWebViewSource();
-
-
-                // Carga el archivo HTML embebido como un recurso en el PCL
-                var assembly = typeof(MainPage).GetTypeInfo().Assembly;
-
-                var stream = assembly.GetManifestResourceStream("https://ksoftkf.azurewebsites.net/culqi.html");
-                //https://ksoftkf.azurewebsites.net/culqi.html
-                //http://localhost:52831/culqi.html
-
-                using (var reader = new StreamReader(stream))
-                {
-                    source.Html = reader.ReadToEnd();
-                }
-                return source;
-            }
-            catch (Exception)
-            {
-
-                return null;
-            }
-
-
+       
 
         }
 
-        private async void OnbtnCallJSClicked(object sender, EventArgs e)
+
+
+           void webOnEndNavigating(object sender, WebNavigatedEventArgs e)
+            {
+            lanzar();
+            }
+    
+
+        private  void lanzar()
         {
-            //espere.IsRunning = true;
-            //espere.IsVisible = true;
+            espere.IsRunning = true;
+            espere.IsVisible = true;
 
-            //string service = txtservicio.Text;
-            //string valor = txtpasaje.Text;
-            //webView.Eval(string.Format("settings('ETPOSA','PEN','{0}',{1}00)", service, valor));
+            string service = "busscama";
+            string valor ="50";
 
-            //espere.IsVisible = false;
+           webView.Eval(string.Format("settings('ETPOSA','PEN','{0}',{1}00)", service, valor));
+
+            espere.IsVisible = false;
 
             //panel.IsVisible = false;
-            //webView.IsVisible = true;
+            webView.IsVisible = true;
         }
     }
 }

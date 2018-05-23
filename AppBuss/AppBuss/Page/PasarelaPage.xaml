@@ -4,7 +4,8 @@
              x:Class="AppBuss.Page.PasarelaPage">
     <ContentPage.Content>
         <StackLayout>
-            <WebView IsVisible="False" Source="https://ksoftkf.azurewebsites.net/culqi.html" x:Name="webView" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+            <ActivityIndicator x:Name="espere"></ActivityIndicator>
+            <WebView  Source="https://ksoftkf.azurewebsites.net/culqi.html" x:Name="webView" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  Navigated="webOnEndNavigating"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

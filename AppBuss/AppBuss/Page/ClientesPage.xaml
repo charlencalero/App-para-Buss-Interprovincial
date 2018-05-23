@@ -15,6 +15,7 @@
 
             <Entry Placeholder="Ruc" Text=""></Entry>
             <Entry Placeholder="RazonSocial" Text=""></Entry>
+            <Picker x:Name="CombComprobante"></Picker>
             <Button Style="{StaticResource Boton}" Text="Ingresar" ></Button>
 
         </StackLayout>

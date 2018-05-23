@@ -22,9 +22,11 @@ namespace AppBuss.Page
             CargarDataPasajeros();
 		}
 
+        List<Asientos> asientos = new List<Asientos>();
+
         private void CargarBuss()
         {
-            List<Asientos> asientos = new List<Asientos>();
+           
             asientos.Add(new Asientos(100, 1, 1, "1"));
             asientos.Add(new Asientos(101, 2, 1, "2"));
             asientos.Add(new Asientos(101, 3, 1, "3"));
@@ -83,89 +85,93 @@ namespace AppBuss.Page
           //  throw new NotImplementedException();
         }
 
-        private void Accion(string id)
+        private void Accion(int id)
         {
-            Navigation.PushAsync(new PasarelaPage());
+            var pasajero = new Pasajero();
+            pasajero.asiento = asientos[id].descripcion;
+            pasajero.fecha = "2018-05-19 00:00";
+
+            Navigation.PushAsync(new PasarelaPage(pasajero));
         }
 
         private void a1_Clicked(object sender, EventArgs e)
         {
-
+            Accion(1);
         }
 
         private void a2_Clicked(object sender, EventArgs e)
         {
-
+            Accion(2);
         }
 
         private void a3_Clicked(object sender, EventArgs e)
         {
-
+            Accion(3);
         }
 
         private void a4_Clicked(object sender, EventArgs e)
         {
-
+            Accion(4);
         }
 
         private void a5_Clicked(object sender, EventArgs e)
         {
-
+            Accion(5);
         }
 
         private void a6_Clicked(object sender, EventArgs e)
         {
-
+            Accion(6);
         }
 
         private void a7_Clicked(object sender, EventArgs e)
         {
-
+            Accion(7);
         }
 
         private void a8_Clicked(object sender, EventArgs e)
         {
-
+            Accion(8);
         }
 
         private void a9_Clicked(object sender, EventArgs e)
         {
-
+            Accion(9);
         }
 
         private void a10_Clicked(object sender, EventArgs e)
         {
-
+            Accion(10);
         }
 
         private void a11_Clicked(object sender, EventArgs e)
         {
-
+            Accion(11);
         }
 
         private void a12_Clicked(object sender, EventArgs e)
         {
-
+            Accion(12);
         }
 
         private void a13_Clicked(object sender, EventArgs e)
         {
-
+            Accion(13);
         }
 
         private void a14_Clicked(object sender, EventArgs e)
         {
-
+            Accion(14);
         }
 
         private void a15_Clicked(object sender, EventArgs e)
         {
-
+            Accion(15);
         }
 
         private void a16_Clicked(object sender, EventArgs e)
         {
-
-        }
+             Accion(16);
+        } 
     }
 }
