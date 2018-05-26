@@ -89,6 +89,7 @@ namespace AppBuss.Page
         {
             var pasajero = new Pasajero();
             pasajero.asiento = asientos[id].descripcion;
+            
             pasajero.fecha = "2018-05-19 00:00";
 
             Navigation.PushAsync(new PasarelaPage(pasajero));

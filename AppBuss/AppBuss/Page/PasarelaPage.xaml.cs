@@ -15,12 +15,12 @@ namespace AppBuss.Page
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class PasarelaPage : ContentPage
 	{
-      
+        Pasajero pasaj = new Pasajero();
 
         public PasarelaPage (Pasajero pasajero)
 		{
 			InitializeComponent ();
-       
+            pasaj = pasajero;
 
         }
 
@@ -37,7 +37,7 @@ namespace AppBuss.Page
             espere.IsRunning = true;
             espere.IsVisible = true;
 
-            string service = "busscama";
+            string service = "Servicio Buss Cama - Asiento:" + pasaj.asiento ;
             string valor ="50";
 
            webView.Eval(string.Format("settings('ETPOSA','PEN','{0}',{1}00)", service, valor));
