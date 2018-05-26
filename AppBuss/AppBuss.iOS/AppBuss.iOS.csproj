@@ -128,4 +128,37 @@
       <Name>AppBuss</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="asie1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="AsieLibre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="AsieLibre2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="AsieOcup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="AsiePend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="AsieRese.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="busspeque.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="front.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="piso.png" />
+  </ItemGroup>
 </Project>
